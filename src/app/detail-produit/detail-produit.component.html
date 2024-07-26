@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>voir détail produit</title>
+</head>
+<body>
+  <div *ngIf="produit">
+    <h3>{{ produit.produit }}</h3>
+    <img [src]="produit.imageUrl" alt="{{ produit.produit }}" class="img-fluid">
+    <p>{{ produit.description }}</p>
+    <p>Prix: {{ produit.prix | number:'1.2-2' }} EUR</p>
+  </div>
+</body>
+</html>
+
