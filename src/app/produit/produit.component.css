@@ -1,26 +1,37 @@
 * {
   font-family: Roboto, Helvetica, sans-serif;
 }
-/* .produit-card {
-  width: 35%;
-  img {
-    width: 100%;
-  }
-} */
+
 .card {
-  width: 18rem;
-  margin: 1rem auto;
-  text-align: center;
+  width: 14rem; /* Réduit la largeur des cartes */
+  margin: 1.5rem auto; /* Augmente légèrement la marge pour plus d'espace entre les cartes */
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardg {
+  margin: 1.5rem 0.75rem; /* Augmente légèrement la marge horizontale */
+}
+
+.card-img-top {
+  height: 150px; /* Ajustez la hauteur des images pour uniformiser la taille */
+  object-fit: cover; /* Assure que l’image remplit l’espace sans déformer */
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
 .card-text {
   font-size: 1rem;
   color: #555;
+}
+
+.card-body {
+  flex: 1; /* Permet à la carte de remplir l’espace restant */
 }
 
 .btn {
@@ -31,10 +42,12 @@ form {
   margin-bottom: 2rem;
 }
 
+
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
